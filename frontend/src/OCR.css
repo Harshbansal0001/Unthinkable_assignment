@@ -1,0 +1,36 @@
+/* src/OCR.css */
+.ocr-container {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f0f8ff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .processing {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .ocr-result {
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: vertical;
+  }
+  
+  textarea:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  

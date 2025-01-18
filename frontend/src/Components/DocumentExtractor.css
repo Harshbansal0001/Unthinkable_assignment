@@ -1,0 +1,291 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+.pdf-uploader {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.drag-drop-area {
+    border: 2px dashed #aaa;
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 6px;
+    background-color: #fafafa;
+    color: #555;
+    cursor: pointer;
+}
+
+.drag-drop-area p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.drag-drop-area span {
+    display: block;
+    margin: 10px 0;
+    font-size: 14px;
+    color: #777;
+}
+
+.file-input {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.upload-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.upload-button:hover {
+    background-color: #0056b3;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+.extracted-text {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.extracted-text h2 {
+    font-size: 20px;
+    color: #333;
+}
+
+.extracted-text pre {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 6px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    border: 1px solid #ddd;
+}
+
+
+
+/* //********** */
+
+/* Add this CSS to a new file named DocumentExtractor.css */
+
+/* General Styling */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .max-w-4xl {
+    max-width: 56rem;
+    margin: auto;
+  }
+  
+  .bg-white {
+    background-color: #ffffff;
+  }
+  
+  .text-gray-700 {
+    color: #4a4a4a;
+  }
+  
+  .text-gray-600 {
+    color: #6b7280;
+  }
+  
+  .text-gray-500 {
+    color: #9ca3af;
+  }
+  
+  .text-blue-600 {
+    color: #2563eb;
+  }
+  
+  .text-red-700 {
+    color: #b91c1c;
+  }
+  
+  .text-xl {
+    font-size: 1.25rem;
+  }
+  
+  .text-2xl {
+    font-size: 1.5rem;
+  }
+  
+  .font-bold {
+    font-weight: 700;
+  }
+  
+  .font-medium {
+    font-weight: 500;
+  }
+  
+  .p-6 {
+    padding: 1.5rem;
+  }
+  
+  .mb-4 {
+    margin-bottom: 1rem;
+  }
+  
+  .mt-4 {
+    margin-top: 1rem;
+  }
+  
+  .mt-6 {
+    margin-top: 1.5rem;
+  }
+  
+  .shadow-lg {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .rounded-lg {
+    border-radius: 0.5rem;
+  }
+  
+  /* File Input Area */
+  .border-2 {
+    border-width: 2px;
+  }
+  
+  .border-dashed {
+    border-style: dashed;
+  }
+  
+  .border-gray-300 {
+    border-color: #d1d5db;
+  }
+  
+  .cursor-pointer {
+    cursor: pointer;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .flex-col {
+    flex-direction: column;
+  }
+  
+  .items-center {
+    align-items: center;
+  }
+  
+  .w-full {
+    width: 100%;
+  }
+  
+  /* Buttons */
+  button {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover:not([disabled]) {
+    transform: translateY(-2px);
+  }
+  
+  button:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+  }
+  
+  .bg-blue-600 {
+    background-color: #2563eb;
+  }
+  
+  .bg-blue-600:hover {
+    background-color: #1e40af;
+  }
+  
+  .bg-gray-400 {
+    background-color: #d1d5db;
+  }
+  
+  .bg-red-100 {
+    background-color: #fee2e2;
+  }
+  
+  /* File Selection Details */
+  .text-sm {
+    font-size: 0.875rem;
+  }
+  
+  .list-disc {
+    list-style-type: disc;
+  }
+  
+  .pl-5 {
+    padding-left: 1.25rem;
+  }
+  
+  .space-y-1 > * + * {
+    margin-top: 0.25rem;
+  }
+  
+  /* Extracted Text and Summary */
+  .bg-blue-50 {
+    background-color: #eff6ff;
+  }
+  
+  .bg-gray-50 {
+    background-color: #f9fafb;
+  }
+  
+  .whitespace-pre-wrap {
+    white-space: pre-wrap;
+  }
+  
+  /* Key Points Styling */
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    margin: 0.5rem 0;
+    line-height: 1.5;
+  }
+  
+  /* Loading and Error Messages */
+  .error {
+    color: #b91c1c;
+    font-weight: 600;
+  }
+  
+  .loading-stage {
+    color: #2563eb;
+    font-weight: 500;
+  }
+  
